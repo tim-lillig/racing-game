@@ -39,16 +39,14 @@ background = pygame.image.load(os.path.join('images','track.png'))
 backgroundbox = WIN.get_rect()
 
 player = Player()
-computer = Player()
 
-player.rect.x = 435
-player.rect.y = 45
-computer.rect.x = 435
-computer.rect.y = 65
+player.rect.x = 475
+player.rect.y = 100
+
 
 player_list = pygame.sprite.Group()
 player_list.add(player)
-player_list.add(computer)
+
 
 
 speedChange = 0
